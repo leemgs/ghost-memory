@@ -13,6 +13,9 @@ Find a bad man in real situation without a simulation!!! Can you complete this m
 It autogenerates and uses a swap file dynamically. The `/etc/init.d/***` script exists. So one does not need to have a fixed size swap partition. We enable the swap file, with file size (re-)computed automatically to fit the current RAM size instead of a swap partition.
 By default, it creates swapfile twice as big as the present RAM amount with an upper limit of 2 GB.
 
+### Installation
+* In progress.
+
 
 ### Support or Contact
 
