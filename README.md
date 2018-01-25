@@ -19,4 +19,5 @@ By default, it creates swapfile twice as big as the present RAM amount with an u
 
 ### Support or Contact
 
-Contact me (`leemgs.at.gmail.com`) by sending an email.
+If you have any question, do not hesitate to contact me.
+* Email: Geunsik Lim <leemgs.gmail.com> 
