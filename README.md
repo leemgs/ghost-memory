@@ -9,7 +9,7 @@ Ghost memory is to provide a network filesystem based flexible memory to solve a
 
 ### Background
 
-Find a bad man in real situation without a simulation!!! Can you complete this mission?
+Find a bad man in real situation without a simulation! Can you complete this mission?
 
 ### Design
 
