@@ -1,8 +1,8 @@
 #include <stdio.h>
-static int t = 1;
+static int type = 1;
 int main(void)
 {
-    if (t)
+    if (type)
         printf("on this line\n");
     else
         printf("but not here\n");
