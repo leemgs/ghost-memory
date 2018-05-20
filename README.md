@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/leemgs/ghostmemory.svg?branch=dev)](https://travis-ci.org/leemgs/ghostmemory)
 
-## Welcome to Ghost Memory
+## Ghost Memory
 Ghost memory aims to provide a network filesystem-based more flexible memory management to solve a memory shortage issue due to various situations in distributed environment. Also, It is to dynamically (re-)computes a required memory space based on on-demand mecahnism to fit the current RAM size to avoid Out-of-Memory issue while build source codes. Moreover, it guarantees stable software update without physicial hardware support in case that IoT devices have to need more memory capacity to update the existing software packages.
 
 
