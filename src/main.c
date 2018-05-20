@@ -2,8 +2,7 @@
 This file is part of Swapspace.
 
 Copyright (C) 2005,2006, Software Industry Industry Promotion Agency (SIPA)
-Copyright (C) 2010, Jeroen T. Vermeulen
-Written by Jeroen T. Vermeulen.
+Written by Jeroen T. Vermeulen <jtv@xs4all.nl>.
 
 Swapspace is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -137,7 +136,7 @@ static bool startpidfile(void)
 {
   assert(pidfd == -1);
   if (!make_pidfile) return true;
-  pidfd = open(pidfile, O_WRONLY|O_CREAT|O_EXCL, O_WRONLY);
+  pidfd = open(pidfile, O_WRONLY|O_CREAT|O_EXCL);
   if (unlikely(pidfd == -1))
   {
     if (errno == EEXIST)
@@ -187,7 +186,7 @@ static bool startpidfile(void)
  * for such accesses that enabled an MMU-based workaround on Alpha systems.  But
  * since these macros were no-ops on Intel x86-compatible processors, device
  * driver writers often failed to use them.  If Linux had hit the big time a bit
- * earlier, DEC might have survived.
+ * earlier, DEC
  *
  * The other reason why these instructions were added were signal handlers.  The
  * idea of vectorizing common loops was great; it was a precursor to today's
@@ -461,9 +460,9 @@ int main(int argc, char *argv[])
   // Central loop
   for (++runclock; !stop; ++runclock)
   {
-    if (unlikely(print_status))		print_status = false,	dump_stats();
-    else if (unlikely(adjust_swap))	adjust_swap = false,	request_diet();
-    else 			        handle_requirements();
+    if (print_status)		print_status = false,	dump_stats();
+    else if (adjust_swap)	adjust_swap = false,	request_diet();
+    else 			handle_requirements();
 
     sleep(1);
   }

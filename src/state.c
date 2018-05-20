@@ -2,8 +2,7 @@
 This file is part of Swapspace.
 
 Copyright (C) 2005,2006, Software Industry Industry Promotion Agency (SIPA)
-Copyright (C) 2010, Jeroen T. Vermeulen
-Written by Jeroen T. Vermeulen.
+Written by Jeroen T. Vermeulen <jtv@xs4all.nl>.
 
 Swapspace is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -126,7 +125,7 @@ void handle_requirements(void)
      * The only other action that accompanies timeout is when timing out of the
      * "overfed" state, which is where we normally deallocate.
      */
-    if (unlikely(the_state == st_overfed)) free_swapfile(-reqbytes);
+    if (the_state == st_overfed) free_swapfile(-reqbytes);
     state_to(st_steady);
   }
   else switch (the_state)
@@ -169,3 +168,4 @@ void dump_state(void)
   logm(LOG_INFO, "state: %s", Statenames[the_state]);
   if (timer > 0) logm(LOG_INFO, "timer: %ld", (long)timer);
 }
+

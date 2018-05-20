@@ -1,0 +1,13 @@
+Index: swapspace-1.10/src/main.c
+===================================================================
+--- swapspace-1.10.orig/src/main.c	2009-02-23 12:22:41.000000000 +0100
++++ swapspace-1.10/src/main.c	2009-02-23 12:23:17.000000000 +0100
+@@ -136,7 +136,7 @@
+ {
+   assert(pidfd == -1);
+   if (!make_pidfile) return true;
+-  pidfd = open(pidfile, O_WRONLY|O_CREAT|O_EXCL);
++  pidfd = open(pidfile, O_WRONLY|O_CREAT|O_EXCL, S_IRUSR|S_IWUSR);
+   if (unlikely(pidfd == -1))
+   {
+     if (errno == EEXIST)

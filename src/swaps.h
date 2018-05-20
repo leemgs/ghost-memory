@@ -2,8 +2,7 @@
 This file is part of Swapspace.
 
 Copyright (C) 2005,2006, Software Industry Industry Promotion Agency (SIPA)
-Copyright (C) 2010, Jeroen T. Vermeulen
-Written by Jeroen T. Vermeulen.
+Written by Jeroen T. Vermeulen <jtv@xs4all.nl>.
 
 Swapspace is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
