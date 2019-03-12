@@ -5,7 +5,7 @@ Ghost memory aims to provide a network filesystem-based more flexible memory man
 
 
 ### Background
-My First quesiton is "Find a bad man in real situation without a simulation!" in case that Out-of-Memory issue frequently happends.
+My First quesiton is "**Find a bad man in real situation without a simulation!**" in case that Out-of-Memory issue frequently happends.
 This issue repeatedly happends among Server, Desktop, Embedded Devices, and IoT devices.
 
 
